@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+            <script src="js/jquery.js"></script>
+    <title>魚菜共生</title>
+</head>
+<body>
+    <div class="nav-top">
+        <div class="logo">
+            <a>魚菜共生</a>
+        </div>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="data.php">數據</a></li>
+            <li><a href="introduction.html">關於我們</a></li>
+        </ul>
+    </div>
+    <div class="monial">
+        <div class="monialx monialanimation" id="monialxid">
+            <div class="monial-img">
+                <img src="img/work.jpg">
+            </div>
+            <div class="monial-img">
+                <img src="img/bebe.jpg">
+            </div>
+            <div class="monial-img">
+                <img src="img/togather.jpg">
+            </div>
+            <div class="monial-img">
+                <img src="img/happy.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="control-button">
+        <span class="btn "type="button" onclick="btnonclick1()"></span>
+        <span class="btn "type="button" onclick="btnonclick2()"></span>
+        <span class="btn "type="button" onclick="btnonclick3()"></span>
+        <span class="btn "type="button" onclick="btnonclick4()"></span>
+    </div>
+<!------------------------------------------22222222222222222222222222222222----------------------------------->
+    <div class="title" >
+        <div class="title-effects"></div>
+        <h1>什麼是魚菜共生?</h1>
+    </div>
+    <div class="main-1" >
+        <div class="main-1-img">
+            <img src="img/fish.png">
+        </div>
+        <div class="main-1-img2">
+            <img src="img/vag.png">
+        </div>
+        <div class="box">
+            <h2>魚菜共生介紹</h2>
+            <p></p>
+            <div class="box1">
+                <div class="box1-1">
+                <a>「魚菜共生是」結合了「漁業養殖」和「水耕栽培」兩系統的優點而屏除兩系統的獨立運作時的缺點，他
+                    將富含養分的魚廢水取代化學營養一來提供 給植物生長所需，讓對魚有毒的廢水經過大自然中中的微生物
+                    ，轉變成植物的養分，植物的根吸收過後，再讓乾淨的水流回魚塘，形成"魚幫菜.菜幫魚" 的共生關係。植
+                    物的根扮演過濾和淨化養殖槽裡水的角色.並免水質惡化，所以這些養殖槽裡的水，除了因蒸發或植物生長而
+                    減少的部分需要定期添補外 ，可以無限的循環再利用。</a>
+                </div>
+                <div class="box1-2">
+                    <img src="img/fish123.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------33333333333333333333333333333333----------------------------------->
+    <div  id="title2">
+    </div>
+    <div  id="main-2">
+        <div id="container">
+            <div  id="main-2-box1">
+            </div>
+            <div  id="main-2-box2">
+            </div>
+            <div  id="main-2-box3">
+            </div>
+            <div  id="main-2-box4">
+            </div>
+        </div>
+    </div>
+<!------------------------------------------33333333333333333333333333333333----------------------------------->
+    <div  id="title3">
+    </div>
+    <div id="main-3">
+        <div class="card">
+        </div>
+    </div>
+    <div id="main-4">
+    </div>
+    <div id="title4">
+    </div>
+    <div id="main-5">
+    </div>
+    <div id="title5">
+    </div>
+    <div id="main-6">
+    </div>
+    <div class="ggggggggggg"></div>
+</body>
+<script>
+    let a=0;
+$(window).scroll(function() {
+    let st = this.scrollY; 
+    /*if(st >3800){
+       if(a<6){
+        $("#title5").addClass("title");
+        $("#title5").html('<div class="title-effects"></div><h1>影片介紹</h1>');
+        $("#main-6").addClass("main-6");
+        $("#main-6").html('<div><object data="video/fish.mp4" width="900" height="600"></object></div>');
+      a=a+1;
+      }
+    }*/
+     if(st >3200){
+       if(a<5){
+        $("#title4").addClass("title");
+        $("#main-5").html('<img src="img/5555555.jpg"><img src="img/PH.jpg">');
+        $("#main-5").addClass("main-5");
+        $("#title4").html('<div class="title-effects"></div><h1>我們的實體圖</h1>');
+      a=a+1;
+      }
+   }
+    else if(st >1995){
+        if(a<4){
+        $("#main-4").addClass("main-4");
+        $("#main-4").html('<div class="container2"><div class="card2"><div class="imgbx"><img src="img/dataicon.jpg"></div><div class="content2"> <div><h3>數據監視</h3><p>透過數據監視可快速的在網頁上觀測數值，如果數值有錯誤會警示</p></div></div></div><div class="card2"><div class="imgbx"><img src="img/care.png"></div><div class="content2"><div><h3>鏡頭監視</h3><p>可即時看見植物生長或是觀察周遭的人事物</p></div></div></div><div class="card2"><div class="imgbx"><img src="img/phone.png"></div><div class="content2"><div><h3>手機APP</h3><p>可以使用手機隨身攜帶，並開啟APP可以即時觀測數據及監視</p></div></div></div></div>');
+        a=a+1;
+        }
+   }
+    else if(st >1900){
+        if(a<3){
+        $("#title3").addClass("title");
+        $("#title3").html('<div class="title-effects"></div><h1>我們魚菜共生的差別</h1>');
+        $("#main-3").addClass("main-3");
+        $("#main-3").html('<div class="card"><div class="face face1"><img src="img/iot.jpg"></div><div class="face face2"><div class="content"><h2>智慧物聯網</h2><p>物聯網透過網路傳遞訊息與收集資料，使裝置與裝置進行溝通。</p></div></div></div>');
+      a=a+1;
+        }
+   }
+   else if(st >1400){
+    if(a<2){
+        $("#main-2").addClass("main-2");
+        $("#container").addClass("container");
+        $("#main-2-box1").addClass("main-2-box");
+        $("#main-2-box1").html('<h2>健康</h2><h3> 1.無農藥可安心享用<br>2.讓心情放鬆紓解壓力<br> 3.美味清爽可口</h3> <img src="img/food.jpg">');
+        $("#main-2-box2").addClass("main-2-box2");
+        $("#main-2-box2").html('<h2>環保</h2><h3>1.無須農藥減少汙染<br>2.無須澆水省水<br>3.可減少二氧化碳</h3> <img src="img/ggg.png">');
+        $("#main-2-box3").addClass("main-2-box3");
+        $("#main-2-box3").html(' <h2>省力</h2><h3>1.無須翻土除草<br>2.不需澆水<br>3.輕鬆採集蔬菜  </h3><img src="img/rest.png">');
+        $("#main-2-box4").addClass("main-2-box4");
+        $("#main-2-box4").html('<h2>美觀</h2><h3>1.家中的裝置藝術<br>2.一種家中生態園區</h3><br><img src="img/fish111.jpg">');
+      a=a+1;
+      }
+   }
+    else if(st >1300){
+       if(a<1){
+        $("#title2").addClass("title");
+        $("#title2").html('<div class="title-effects"></div><h1>魚菜共生好處?</h1>');
+      a=a+1;
+      }
+   }
+});
+</script>
+</html>

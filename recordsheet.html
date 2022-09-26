@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recordsheet.css">
+    <title>數據</title>
+</head>
+<body>
+    <div class="nav-top">
+        <div class="logo">
+            <a>魚菜共生</a>
+        </div>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="data.php">數據</a></li>
+            <li><a href="introduction.html">關於我們</a></li>
+            <li><a href="recordsheet.html">紀錄表</a></li>
+        </ul>
+    </div>
+    <iframe src="https://script.google.com/a/macros/ems.tcust.edu.tw/s/AKfycbzCL6h2OflKbpIZw1m9n4wJrGeDbh75H0nrzFi3RKwqZr1qG92ho5Y6l_sATzz_jsUzPw/exec" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="1000" scrolling="auto">
+    </iframe>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+</html>
